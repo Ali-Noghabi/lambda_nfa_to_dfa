@@ -67,6 +67,9 @@ def simulate_dfa(dfa, input_str):
     for symbol in input_str:
         if symbol not in dfa.alphabet:
             return False
+        if symbol not in dfa.transitions[current_state]:
+            # Symbol not defined for current state
+            return False
         current_state = dfa.transitions[current_state][symbol]
     return current_state in dfa.accept_states
 
