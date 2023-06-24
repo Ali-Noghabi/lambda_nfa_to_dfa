@@ -28,3 +28,25 @@ aab
 - converted dfa graph plot:</br>![image](https://github.com/Ali-Noghabi/lambda_nfa_to_dfa/assets/84205460/b3406ee2-2018-474a-b495-99431e6beb99)
 - the result of input string check in the automaton
 - converted dfa graph print
+
+# input for automaton with lambda transition
+```
+3 3 1 5 7
+a
+b
+c
+0
+2
+0 a 0
+0 $ 1
+1 b 1
+1 $ 2
+2 c 2
+aaa
+aabbb
+ccaaabbb
+ccc
+bbbcc
+acb
+ccba
+```
